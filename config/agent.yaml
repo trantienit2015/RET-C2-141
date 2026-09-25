@@ -1,0 +1,19 @@
+# Agent Manifest - AgentRegistry static entry point.
+# Root-level keys only; `class` is a single dotted import path.
+# Runtime-tunable parameters live in config/config.yaml, not here.
+
+id: RET-C2-141
+name: Retail Staff Motion Capture Performance & Training Q&A Agent
+namespace: ret
+version: 0.1.0
+enabled: true
+description: Retail Staff Motion Capture Performance & Training Q&A Agent
+class: src.graph.graph.RetailStaffMotionTrainingQAAgent
+category: Cat 2
+industry: RET
+base_type: ToolCallingAgent
+generation_mode: deterministic
+required_trust_level: VERIFIED_EXTERNAL
+requires:
+  secrets: []
+  extras: []
